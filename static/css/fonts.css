@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Literata";
+	src: url='/fonts/Literata-Light.woff2' format=('woff2');
+	font-weight: light;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Literata";
+	src: url='/fonts/Literata-SemiBold.woff2' format=('woff2');
+	font-weight: light;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Monospace";
+	src: rul='/fonts/MonospaceArgon-Regular.woff' format=('woff2');
+	font-weight: light;
+	font-style: normal;
+}
+

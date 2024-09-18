@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="list-content">
+
+	{{ $dateformat := "2 Jan 2006" }}
+	{{ with .Site.Params.listDateFormat }}
+	{{ $dateformat = . }}
+	{{ end }}
+
+	<h1>{{.Title}}</h1>
+	{{ .Content }}
+
+		{{ range .Data.Pages.ByDate }}
+	<div class="post">
+		<li>
+			<p class="date">
+			{{ .Date.Format $dateformat }}
+			<a class="title" href="{{ .RelPermalink }}"> {{ .Title }}</a>
+			</p>
+		</li>
+		</div>
+	</div>
+		{{ end }}
+
+</div>
+{{ end }}
+

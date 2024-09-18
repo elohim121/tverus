@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+	<h1>{{ .Title }}</h1>
+
+	{{ with .Param "summary" }}
+	<p class="single-sum"> {{ . }} </p>
+	{{ end }}
+
+ {{ if .Param "toc" }}
+  <aside class="toc">
+    <p><strong>Table of contents</strong></p>
+    {{ .TableOfContents }}
+  </aside>
+  {{ end }}
+
+	{{ .Content }}
+
+{{ end }}
+

@@ -1,0 +1,16 @@
+<div class="header">
+	<h1 class="header-title">{{ .Site.Title }}</h1>
+	
+	{{ $currentPage := . }}
+	{{ with .Site.Params.menu }}
+	{{ range . }}
+	<p class="list-menu">
+		<a class="small {{ if eq .name ($currentPage.Name) }} bold {{end}}" href="{{ .url}}">/{{.name}}  
+		</a>
+	</p>
+
+	{{ end }}
+</div>
+
+{{ end }}
+

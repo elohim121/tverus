@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'verusvir'
+
+[markup]
+[markup.highlight]
+style = 'bw'
+
